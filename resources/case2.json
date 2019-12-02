@@ -1,0 +1,28 @@
+{
+	"database": {
+		"SLOs": [
+		{
+			"unit": "",
+			"name": "Monthly_uptime_percentage",
+			"value": "0.9999",
+			"operator": ">="
+		}
+		],
+		"config": {
+			"type": "db"
+		}
+	},
+	"solver": {
+		"SLOs": [
+		{
+			"unit": "",
+			"name": "Monthly_uptime_percentage",
+			"value": "0.9999",
+			"operator": ">="
+		}
+		],
+		"config": {
+			"type": "compute"
+		}
+	}
+}

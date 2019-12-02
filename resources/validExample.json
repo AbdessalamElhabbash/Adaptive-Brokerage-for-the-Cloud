@@ -1,0 +1,21 @@
+{  
+	"aws_compute_web": [
+		{ "name": "Maximum_processing_tim",
+          "unit": "s",
+          "value": "5-10",
+          "operator": "in"
+      	},
+      	{ "name": "Monthly_uptime_percentage",
+          "unit": "",
+          "value": "0.999",
+          "operator": ">="
+      	}
+    ],
+    "aws_db": [ 
+    	{ "name": "Disk_space",
+    	  "unit": "TB",
+    	  "value": "500",
+    	  "operator": ">="
+    	}
+    ]
+}

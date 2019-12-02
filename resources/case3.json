@@ -1,0 +1,63 @@
+{
+	"database": {
+		"SLOs": [
+			{
+				"unit": "",
+				"name": "Monthly_uptime_percentage",
+				"value": "0.9999",
+				"operator": ">="
+			},
+			{
+				"unit": "GB",
+				"name": "Monthly_egress_bandwidth",
+				"value": "2000",
+				"operator": "<="
+			}
+		],
+		"config": {
+			"type": "db"
+		}
+	},
+	"solver": {
+		"SLOs": [
+			{
+				"unit": "",
+				"name": "Monthly_uptime_percentage",
+				"value": "0.9999",
+				"operator": ">="
+			},
+			{
+				"unit": "GB",
+				"name": "Monthly_egress_bandwidth",
+				"value": "2000",
+				"operator": "<="
+			}
+		],
+		"config": {
+			"type": "compute"
+		}
+	},
+	"application": {
+		"SLOs": [
+			{
+				"unit": "",
+				"name": "Monthly_uptime_percentage",
+				"value": "0.999",
+				"operator": ">="
+			},
+			{
+				"unit": "$",
+				"name": "Monthly_bandwidth_cost",
+				"value": "20",
+				"operator": "<"
+			}
+		]
+	},
+	"data_flow": [{
+		"from": "solver",
+		"to": "database"
+	}, {
+		"from": "database",
+		"to": "internet"
+	}]
+}

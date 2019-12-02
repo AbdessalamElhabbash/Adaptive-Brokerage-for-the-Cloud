@@ -1,0 +1,57 @@
+{
+	"component_ID1": {
+		"SLOs": [
+			{
+				"name": "slo_name1",
+				"unit": "slo_unit",
+				"value": "slo_value",
+				"operator": "slo_operator"
+			},
+			{
+				"name": "slo_name2",
+				"unit": "slo_unit",
+				"value": "slo_value",
+				"operator": "slo_operator"
+			}
+		],
+		"config": {
+			"type": "component_type"
+		}
+	},
+	"component_ID2": {
+		"SLOs": [
+			{
+				"name": "slo_name1",
+				"unit": "slo_unit",
+				"value": "slo_value",
+				"operator": "slo_operator"
+			},
+			{
+				"name": "slo_name2",
+				"unit": "slo_unit",
+				"value": "slo_value",
+				"operator": "slo_operator"
+			}
+		],
+		"config": {
+			"type": "component_type"
+		}
+	},
+	"application": {
+		"SLOs": [
+			{
+				"name": "slo_name1",
+				"unit": "slo_unit",
+				"value": "slo_value",
+				"operator": "slo_operator"
+			}
+		]
+	},
+	"data_flow": [{
+		"from": "component_ID",
+		"to": "component_ID"
+	}, {
+		"from": "component_ID",
+		"to": "component_ID2"
+	}]
+}

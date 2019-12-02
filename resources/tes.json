@@ -1,0 +1,32 @@
+{
+"database": {
+	"SLOs": [{
+			"name": "Monthly_uptime_percentage",
+			"unit": "",
+			"value": "0.99",
+			"operator": ">=" 
+			},
+			{
+				"name": "Monthly_consistency_attainment_percentage",
+				"unit": "",
+				"value": "0.9999",
+				"operator": ">="
+			},
+			{
+				"name": "Monthly_latency_attainment_percentage",
+				"unit": "",
+				"value": "0.9999",
+				"operator": ">="
+			},
+			{
+				"name": "Monthly_throughput_percentage",
+				"unit": "",
+				"value": "0.9999",
+				"operator": ">="
+			}
+		],
+		"config": {
+			"type": "db"
+		}
+	}
+}

@@ -1,0 +1,10 @@
+azure_cosmos_db
+aws_dynamodb
+google_sql
+rackspace_storage
+digitalocean_storage
+azure_compute
+aws_compute
+google_compute
+rackspace_compute
+digitalocean_compute

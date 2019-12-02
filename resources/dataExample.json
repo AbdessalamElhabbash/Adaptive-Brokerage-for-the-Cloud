@@ -1,0 +1,55 @@
+{
+	"data_flow": [{
+		"unit": "GB",
+		"bw": "1000",
+		"from": "solver",
+		"to": "db"
+	}, {
+		"unit": "GB",
+		"bw": "1000",
+		"from": "solver",
+		"to": "db"
+	}],
+	"application": {
+		"SLOs": [{
+			"unit": "$",
+			"name": "Monthly_bandwidth_cost",
+			"value": "30",
+			"operator": "<="
+		}]
+	},
+	"db": {
+		"SLOs": [{
+			"unit": "ms",
+			"name": "Maximum_response_time",
+			"value": "100",
+			"operator": "<="
+		}, {
+			"unit": "",
+			"name": "Monthly_uptime_percentage",
+			"value": "0.999",
+			"operator": ">="
+		}],
+		"config": {
+			"type": "compute",
+			"region": "Canada Central"
+		}
+	},
+	"solver": {
+		"SLOs": [{
+			"unit": "ms",
+			"name": "Maximum_response_time",
+			"value": "100",
+			"operator": "<="
+		}, {
+			"unit": "",
+			"name": "Monthly_uptime_percentage",
+			"value": "0.999",
+			"operator": ">="
+		}],
+		"config": {
+			"type": "compute",
+			"region": "Canada Central"
+		}
+	}
+}
